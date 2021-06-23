@@ -1,13 +1,12 @@
 # odoo-mailer
 
 `odoo-mailer` allows you to configure push mail the right way for [odoo](https://odoo.com). It works side by side
-with an odoo plugin (`mail_delivery`) that defines an api point for getting aliases list and use `odoo-mailer`
-api point to send the aliases list in case of aliases model modification.
+with an odoo plugin (`mail_delivery`) that defines API point used to populate postfix maps.
 
 ## Odoo mail
 
 One of the strong feature of odoo is to place regular email at the center of business workflows. By catching email
-sent to decicated addresses, odoo can create automatically leads, opportunities, invoices, tasks, support tickets, ...
+sent to dedicated addresses, odoo can create automatically leads, opportunities, invoices, tasks, support tickets, ...
 
 By default odoo connects to an imap or a pop server and poll them every x minutes for new emails. All emails
 should arrive in the same mailbox and you generally use a catchall address as send address or use a dedicated mail
